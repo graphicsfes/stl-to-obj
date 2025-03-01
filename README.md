@@ -1,7 +1,8 @@
 <h1>STL to OBJ converter in Javascript</h1>
 <a href="https://www.freestlplus.com/p/free-stl-to-obj-converter.html">Live Preview STL to OBJ converter</a>
 <h2>JS code</h2>
-<code>
+<pre><code>
+  &lt;script&gt;
   function parseSTL(stlBuffer) {
     const text = new TextDecoder().decode(stlBuffer);
     if (text.startsWith("solid")) {
@@ -101,4 +102,5 @@ function downloadOBJ(objString, filename) {
     link.click();
     document.body.removeChild(link);
 }
-</code>
+  &lt;/script&gt;
+</code></pre>
