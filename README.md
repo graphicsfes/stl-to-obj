@@ -87,7 +87,7 @@ document.getElementById("stlInput").addEventListener("change", function(event) {
         const objData = parseSTL(reader.result);
         downloadOBJ(objData, fileNameWithoutExt+"-www_freestlplus_com.obj");
         document.getElementById("stlInput").style.display = 'none'
-        document.getElementById("stlInput").insertAdjacentHTML('afterend', '<p id="message">"'+fileNameWithoutExt+"-www_freestlplus_com.obj"+'" download should be starting now</p><h1><a href="https://www.freestlplus.com/p/free-stl-to-obj-converter.html">Try another file</a></h1>')
+        document.getElementById("stlInput").insertAdjacentHTML('afterend', '<p id=\"message">"'+fileNameWithoutExt+"-www_freestlplus_com.obj"+'" download should be starting now</p><h1><a href=\"https://www.freestlplus.com/p/free-stl-to-obj-converter.html\">Try another file</a></h1>')
     };
     reader.readAsArrayBuffer(file);
 });
